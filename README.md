@@ -1,2 +1,2 @@
 # devnews-web
-Developer news web interface
+Developer news web client
