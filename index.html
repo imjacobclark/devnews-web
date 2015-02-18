@@ -2,16 +2,20 @@
 <html>
     <head>
         <title>Developer News</title>
+        <link rel="stylesheet" href="assets/css/style.css">
         <script src="assets/js/vendor/handlebars-v3.0.0.js"></script>
     </head>
 
     <body>
-    	<main id="main"></main>
+    	<main id="main">
+    		<h1>Developer News</h1>
+    		<p>Built by <strong><a href="http://jacob.uk.com">Jacob Clark</a></strong></p>
+    	</main>
 
 		<script id="news-template" type="text/x-handlebars-template">
 			<ol>
 				{{#each this.items}}
-					<li><a href="{{this.url}}">{{this.title}}</a> (source: {{this.source}}, score: {{this.score}})</li>
+					<li><a href="{{this.url}}">{{this.title}}</a> <span class="details">(source: {{this.source}}, score: {{this.score}})</span></li>
 				{{/each}}
 			</ol>
 		</script>

@@ -1,0 +1,36 @@
+body {
+	font-family: Arial
+}
+
+a {
+	color: #454545;
+	text-decoration: none;
+}
+
+h1 { 
+	text-align: center;
+}
+
+p { 
+	border-bottom: 1px solid black;
+	font-size: 12px;
+	padding-bottom: 10px;
+	text-align: center;
+}
+
+li {
+	font-size: 16px;
+    margin-bottom: 10px;
+}
+
+li:nth-child(odd) {
+    background-color: #FFF;
+}
+
+li:nth-child(even) {
+    background-color: #E0DFDE;
+}
+
+.details {
+	font-size: 12px;
+}
