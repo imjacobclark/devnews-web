@@ -1,7 +1,11 @@
 Handlebars.registerHelper('getRootURL', function(url){
     if(url.search(/^https?\:\/\//) != -1)
-        url = url.match(/^https?\:\/\/([^\/?#]+)(?:[\/?#]|$)/i, "");
+        parsed = url.match(/^https?\:\/\/([^\/?#]+)(?:[\/?#]|$)/i, "");
     else
-        url = url.match(/^www.([^\/?#]+)(?:[\/?#]|$)/i, "");
-    return url[1].replace("www.", "");
+        parsed = url.match(/^www.([^\/?#]+)(?:[\/?#]|$)/i, "");
+    
+    if(parsed == null)
+    	return url
+
+    return parsed[1].replace("www.", "");
 });
