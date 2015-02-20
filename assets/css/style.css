@@ -10,11 +10,13 @@ a {
 
 h1 { 
 	text-align: center;
+	margin-bottom: 0px;
 }
 
 .strapline { 
 	border-bottom: 1px solid black;
 	font-size: 12px;
+	margin-top: 0px;
 	padding-bottom: 10px;
 	text-align: center;
 }
