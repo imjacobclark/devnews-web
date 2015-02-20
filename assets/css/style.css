@@ -11,7 +11,7 @@ h1 {
 	text-align: center;
 }
 
-p { 
+.strapline { 
 	border-bottom: 1px solid black;
 	font-size: 12px;
 	padding-bottom: 10px;
@@ -33,4 +33,10 @@ li:nth-child(even) {
 
 .details {
 	font-size: 12px;
+}
+
+footer {
+	font-size: 12px;
+	padding-bottom: 10px;
+	text-align: center;
 }
