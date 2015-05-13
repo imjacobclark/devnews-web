@@ -1,0 +1,21 @@
+[Unit]
+Description=Developer News Web Interface
+After=docker.service
+After=etcd.service
+Requires=devnews-web-discovery@%i.service
+
+[Service]
+KillMode=none
+EnvironmentFile=/etc/environment
+Restart=always
+ExecStartPre=-/usr/bin/docker kill devnews-web%i
+ExecStartPre=-/usr/bin/docker rm devnews-web%i
+ExecStartPre=/usr/bin/docker pull imjacobclark/devnews-web
+ExecStart=/usr/bin/docker run -p ${COREOS_PUBLIC_IPV4}:%i:3000 --name devnews-web%i imjacobclark/devnews-web
+ExecStop=/usr/bin/docker stop devnews-web%i
+TimeoutStartSec=0
+Restart=always
+RestartSec=10s
+
+[X-Fleet]
+X-Conflicts=devnews-web@*
