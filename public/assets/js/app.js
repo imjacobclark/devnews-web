@@ -1,7 +1,7 @@
 var nojs = document.querySelector(".nojs")
 nojs.parentNode.removeChild(nojs);
 
-document.getElementById('main').innerHTML += "<p class='loading'>Grabbing fresh data from <strong>HackerNews</strong> and <strong>Reddit</strong>...</p>";
+document.getElementById('main').innerHTML += "<p class='loading'>Grabbing the latest feed...</p>";
 
 var http = new XMLHttpRequest();
 http.open("GET", "http://api.devnews.today", true);
