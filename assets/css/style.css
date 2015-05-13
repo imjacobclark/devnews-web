@@ -1,6 +1,4 @@
 body {
-	background-color: #E9E9E9;
-	font-family: Arial
 }
 
 a {
@@ -9,16 +7,12 @@ a {
 }
 
 h1 { 
-	text-align: center;
 	margin-bottom: 0px;
 }
 
 .strapline { 
-	border-bottom: 1px solid black;
 	font-size: 12px;
 	margin-top: 0px;
-	padding-bottom: 10px;
-	text-align: center;
 }
 
 .nojs{
@@ -37,11 +31,9 @@ li {
 }
 
 li:nth-child(odd) {
-    background-color: #E9E9E9;
 }
 
 li:nth-child(even) {
-    background-color: #F7F7F7;
 }
 
 .details {
