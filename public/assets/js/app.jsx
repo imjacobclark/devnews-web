@@ -34,7 +34,7 @@ var DeveloperNews = React.createClass({
     },
     render: function(){
         var data = this.state.data.map(function(item){
-            item.url = this.getRootURL(item.url);
+            item.baseURL = this.getRootURL(item.url);
 
             return (
                 <NewsItem data={item} />
@@ -56,7 +56,7 @@ var NewsItem = React.createClass({
                 <a href={this.props.data.url}>{this.props.data.title} </a> 
                 
                 <span class="details">
-                    <strong>{this.props.data.url}</strong> ({this.props.data.source}, score: {this.props.data.score})
+                    <strong>{this.props.data.baseURL}</strong> ({this.props.data.source}, score: {this.props.data.score})
                 </span>
             </li>
         )
