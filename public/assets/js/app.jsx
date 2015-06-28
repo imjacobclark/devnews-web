@@ -53,7 +53,7 @@ var NewsItem = React.createClass({
     render: function(){
         return (
             <li>    
-                <a href="{this.props.data.url}">{this.props.data.title} </a> 
+                <a href={this.props.data.url}>{this.props.data.title} </a> 
                 
                 <span class="details">
                     <strong>{this.props.data.url}</strong> ({this.props.data.source}, score: {this.props.data.score})
