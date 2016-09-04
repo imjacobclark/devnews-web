@@ -6,7 +6,7 @@ var DeveloperNews = React.createClass({
     },
     loadCommentsFromServer: function(){
         $.ajax({
-            url: "http://api.devnews.today/",
+            url: "https://devnews.api.jacob.uk.com/",
             dataType: 'json',
             cache: false,
             success: function(data) {
